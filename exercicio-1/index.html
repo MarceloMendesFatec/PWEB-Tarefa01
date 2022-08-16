@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-1</title>
+</head>
+<body>
+    
+<div class="flex-container1"> 1 </div>
+
+<div class="flex-containerFather">
+    <div class="flex-container2"> 2 </div>
+    <div class="flex-container3"> 3 </div>
+        <div class="flex-containerMother">
+            <div class="flex-container4"> 4a </div>
+            <div class="flex-container4"> 4b </div>
+        </div>
+    
+</div>
+
+</body>
+
+
+<style>
+    body{
+        display: flex;
+        height: 900px;                                                                                                                                      ;
+    }
+
+    .flex-container1{
+        display: flex;
+        background-color: indianred;
+        width: 40%;
+        height: 100%;
+        margin: 5px;
+        font-size: xx-large;
+        color: aliceblue;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container2{
+        display: flex;
+        background-color: greenyellow;
+        width: 98.5%;
+        height: 50%;
+        margin: 5px;
+        font-size: xx-large;
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .flex-container3{
+        display: flex;
+        background-color: rgb(229, 123, 255);
+        height: 50%;
+        width: 50%;
+        margin: 5px;
+        font-size: xx-large;
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container4{
+        display: flex;
+        background-color: rgb(159, 149, 245);
+        width: 100%;
+        height: 47.5%;
+        margin: 5px;
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-containerFather{
+        display: flex;
+        flex-flow:  row wrap;
+        width: 60%;
+        height: 99%;
+    }
+
+    .flex-containerMother{
+        display: flex;
+        align-self: flex-end;
+        width: 47.5%;
+        height: 51.5%;
+        flex-direction: column;
+        font-size: xx-large;
+          
+    }
+</style>
+</html>
