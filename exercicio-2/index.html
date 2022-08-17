@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="flex-containerFather">
+        <div class="flex-container1"> 2 </div>
+        
+        <div class="flex-containerMother2">
+            <div class="flex-container2"> 1 </div>
+            <div class="flex-container3"> 3 </div>
+        </div>
+        <div class="flex-containerMother">
+            <div class="flex-container4"> 4a </div>
+            <div class="flex-container4"> 4b </div>
+        </div>
+   </div>
+    
+
+    <style>
+        body{
+            width: auto;
+            height: 900px;
+            display: flex;
+        }   
+
+        .flex-containerFather{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            align-content: stretch;
+            
+        }
+
+        .flex-container1{
+            display: flex;
+            background-color: rgb(210, 255, 142);
+            width: 98.7%;
+            height: 20%;
+            font-size: 100px;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            margin: 5px;
+        }
+
+        .flex-container2{
+            display: flex;
+            background-color: darksalmon;
+            width: 48%;
+            height: 94%;
+            font-size: 100px;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            margin: 5px;
+            
+
+        }
+
+        .flex-container3{
+            display: flex;
+            background-color: rgb(243, 168, 250);
+            width: 50%;
+            height: 94%;
+            font-size: 100px;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            margin: 5px;
+
+        }
+
+        .flex-containerMother{
+            display: flex;
+            flex-direction: column;
+            width: 99.8%;
+            height: 100%;
+        
+        }
+
+        .flex-container4{
+            display: flex;
+            background-color: rgb(158, 160, 252);
+            width: 99%;
+            height: 19%;
+            font-size: 100px;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            margin: 5px;
+
+        }
+
+        .flex-containerMother2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+           
+        }
+    </style>
+
+</body>
+</html>
