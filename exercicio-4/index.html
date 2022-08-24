@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-4</title>
+</head>
+<body>
+    
+    <div class="containerFather">
+        <div class="containerFather2">
+            <div class="flex-item1"></div>
+            <div class="flex-item2"></div>
+            <div class="flex-item3"></div>
+        </div>
+        <div class="containerFather3"></div>
+        <div class="containerFather4">
+            <div class="flex-item4"></div>
+            <div class="flex-item5"></div>
+            <div class="flex-item6"></div>
+            <div class="flex-item7"></div>
+        </div>
+        <div class="containerFather5"></div>
+    </div>
+
+
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+        }
+        .containerFather{
+            display: flex;
+            background-color: rgb(158, 174, 187);
+            width: 90%;
+            height: 90%;
+            gap: 10px ;
+            justify-content: space-between;
+
+       
+            
+        }
+        .containerFather2{
+            display: flex;
+            flex-direction: column; 
+            height: 100%;
+            width: 20%;
+            gap: 10px;
+            
+        }
+        .flex-item1{
+            background-color: darkcyan;
+            width: 100%;
+            height: 20%;
+            
+        }
+        .flex-item2{
+            background-color: rgb(47, 109, 190);
+            width: 100%;
+            height: 20%;
+            
+        }
+        .flex-item3{
+            background-color: rgb(141, 70, 158);
+            width: 100%;
+            height: 60%;
+            
+        }
+        .containerFather3{
+            display: flex;
+            width: 20%;
+            height: 100%;
+            background-color: darkorange;
+            
+        }
+        .containerFather4{
+            display: flex;
+            flex-wrap: wrap;
+            height: 50%;
+            width: 60%;
+            gap: 10px;
+            
+        }
+        .flex-item4{
+            height: 50%;
+            width: 50%;
+            background-color: darkorange;
+        }
+        .flex-item5{
+            height: 50%;
+            width: 47%;
+            background-color: rgb(209, 70, 167);
+        }
+        .flex-item6{
+            height: 47%;
+            width: 30%;
+            background-color: darkcyan;;
+        }
+        .flex-item7{
+            height: 47%;
+            width: 67%;
+            background-color: rgb(93, 175, 54);
+        }
+      
+    </style>
+</body>
+</html>
