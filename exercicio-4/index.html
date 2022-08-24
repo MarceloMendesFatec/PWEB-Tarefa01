@@ -16,10 +16,28 @@
         </div>
         <div class="containerFather3"></div>
         <div class="containerFather4">
-            <div class="flex-item4"></div>
-            <div class="flex-item5"></div>
-            <div class="flex-item6"></div>
-            <div class="flex-item7"></div>
+            <div class="containerSon">
+                <div class="flex-item4"></div>
+                <div class="flex-item5"></div>
+                <div class="flex-item6"></div>
+                <div class="flex-item7"></div>
+            </div>
+            <div class="containerSon2">
+                <div class="containerGrandson">
+                    <div class="flex-item10"></div>
+                    <div class="flex-item11"></div>
+                </div>
+                <div class="containerGrandson1">
+                    <div class="flex-item12"></div>
+                    <div class="flex-item13"></div>
+                </div>
+            </div>
+            <div class="containerSon3"></div>
+            <div class="containerSon4">
+                <div class="flex-item8"></div>
+                <div class="flex-item9"></div>
+            </div>
+            
         </div>
         <div class="containerFather5"></div>
     </div>
@@ -29,18 +47,17 @@
     <style>
         body{
             display: flex;
-            justify-content: center;
-            align-items: center;
+           
             height: 900px;
         }
         .containerFather{
             display: flex;
             background-color: rgb(158, 174, 187);
-            width: 90%;
-            height: 90%;
+            width: 60%;
+            height: 80%;
             gap: 10px ;
-            justify-content: space-between;
-
+            margin: 0 auto;
+            margin-top: 200px;
        
             
         }
@@ -80,9 +97,9 @@
         .containerFather4{
             display: flex;
             flex-wrap: wrap;
-            height: 50%;
+            height: 100%;
             width: 60%;
-            gap: 10px;
+           gap: 10px;
             
         }
         .flex-item4{
@@ -105,7 +122,95 @@
             width: 67%;
             background-color: rgb(93, 175, 54);
         }
-      
+        .containerSon{
+            display: flex;
+            width: 100%;
+            height: 50%;
+            flex-wrap: wrap;
+            gap: 9px;
+            
+        }
+
+        .containerSon2{
+            display: flex;
+            width: 50%;
+            height: 48.5%;
+           
+        }
+        .containerSon3{
+            display: flex;
+            width: 23%;
+            height: 48.5%;
+            background-color: rgb(60, 167, 131);
+            margin-left: 2px;
+            margin-right: 3px;
+            
+        }
+        .containerSon4{
+            display: flex;
+            flex-direction: column;
+            width: 21.4%;
+            height: 48.5%;
+            gap: 10px;
+           
+            
+        }
+        .flex-item8{
+            background-color: cadetblue;
+            width: 100%;
+            height: 100%;
+         }
+        .flex-item9 {
+            background-color: crimson;
+            width: 100%;
+            height: 100%;
+        }
+        
+        
+        .containerSon5{
+            background-color: blueviolet;
+            display: flex;
+            width: 50%;
+            height: 48.5%;
+            gap: 10px;
+        }
+
+        .containerGrandson{
+            width: 60%;
+            height: 100%;
+        
+            
+        }
+        .containerGrandson1{
+            width: 40%;
+            height: 100%;
+        }
+
+        .flex-item10{
+            background-color: darkorange;
+            width: 100%;
+            height: 40%;
+        }
+        .flex-item11{
+            background-color: rgb(62, 50, 228);
+            width: 100%;
+            height: 58%;
+            margin-top: 7px;
+            
+        }
+        .flex-item12{
+            background-color: rgb(182, 182, 182);
+            width: 95%;
+            height: 40%;
+            margin-left: 9px;
+        }
+        .flex-item13{
+            background-color: rgb(209, 70, 167);
+            width: 95%;
+            height: 58%;
+            margin-top: 7px;
+            margin-left: 9px;
+        }
     </style>
 </body>
 </html>
